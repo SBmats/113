@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" id="gscale">
+  <head>
+    <meta charset="utf-8" />
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 " />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/icefab.png"
+      sizes="16x16"
+      id="appFavicon"
+    />
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link href="./assets/css/bootstrap.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/daterangepicker.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./assets/css/design-structure.css" rel="stylesheet" />
+    <link href="./assets/css/style-whitelabale.css" rel="stylesheet" />
+    <link href="./assets/style-glob.css" rel="stylesheet" />
+    <!-- <link href="./assets/css/style.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/daterangepicker.css" /> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet"> -->
+    <link href="./assets/css/score-theme.css" rel="stylesheet" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css"
+      type="text/css"
+    />
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/hls.js@alpha"></script> -->
+    <script
+      src="./assets/js/t20iphoneadapter.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./assets/js/t20iphoneplayer.js"
+      type="text/javascript"
+    ></script>
+
+    <script src="./assets/js/jquery-3.2.1.min.js"></script>
+
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
+    <script
+      type="application/javascript"
+      src="https://widgets.sir.sportradar.com/020d534eac2800ca94e178bc9d3f060e/widgetloader"
+      async
+    ></script>
+    <!-- <script src="./assets/js/daterangepicker.min.js"></script> -->
+    <script src="./assets/js/custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <!-- this script for drag drop funtionality (tranding event) -->
+
+    <!-- Global site tag All website (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HXKV96FKFP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-HXKV96FKFP");
+    </script>
+
+    <!--Icecric Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KMN58FP");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- BetReder Script -->
+    <!-- <script src="https://iceexchange.sptpub.com/bt-renderer.min.js"></script> -->
+
+    <!-- Gaming licence for icecric -->
+    <script
+      type="text/javascript"
+      src="https://e327fce8-17d5-471c-9928-8480027600de.snippet.anjouangaming.org/anj-seal.js"
+    ></script>
+
+    <!-- OCR work CDN -->
+    <!-- <script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script> -->
+
+    <!------------ AES Encryption/Decryption -------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+    <link rel="stylesheet" href="styles.beb1bf21ce484cce11e8.css" />
+  </head>
+
+  <body id="app-body" class="web" (scroll)="scrollHandler($event)">
+    <!--Icecric Google Tag Manager (noscript) -->
+    <noscript id="icecrictag">
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KMN58FP"
+        height="0"
+        width="0"
+        style="display: none"
+      ></iframe>
+    </noscript>
+
+    <!-- End Google Tag Manager (noscript) -->
+
+    <app-root></app-root>
+    <script type="text/javascript">
+      // for casino stram
+      function loadHTMLVideo(sname) {
+        var webrtcPlayer = null;
+        try {
+          // console.log(webrtcPlayer)
+          webrtcPlayer = new T20RTCPlayer(
+            "remoteVideo",
+            sname,
+            "",
+            "real-game.live",
+            "",
+            true,
+            true,
+            "tcp"
+          );
+          // console.log(webrtcPlayer)
+          webrtcPlayer.Play();
+        } catch (error) {
+          // console.log(error)
+        }
+      }
+      function loadStreamVideo(sname, url) {
+        var webrtcPlayer = null;
+        try {
+          webrtcPlayer = new T20RTCPlayer(
+            "remoteVideo",
+            sname,
+            "",
+            url,
+            "",
+            true,
+            true,
+            "tcp"
+          );
+          webrtcPlayer.Play();
+        } catch (error) {
+          // console.log(error)
+        }
+      }
+
+      window.addEventListener("online", () =>
+        document.getElementById("gscale").classList.remove("grayscale")
+      );
+      window.addEventListener("offline", () =>
+        document.getElementById("gscale").classList.add("grayscale")
+      );
+    </script>
+
+    <script src="runtime-es2015.fe02381a301b7e14824e.js" type="module"></script>
+    <script
+      src="polyfills-es2015.780d70fc78b7a491365e.js"
+      type="module"
+    ></script>
+    <script src="runtime-es5.5627ec37e7bbe3958f6c.js" nomodule defer></script>
+    <script src="polyfills-es5.132d71e26e7eb047f190.js" nomodule defer></script>
+    <script src="main-es2015.673201346626c82cc820.js" type="module"></script>
+    <script src="main-es5.adb96a2257cb3402c791.js" nomodule defer></script>
+  </body>
+</html>
