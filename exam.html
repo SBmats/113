@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Exam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Student Exam</h2>
+    <form id="examForm"></form>
+  </div>
+  <script>
+    const student = JSON.parse(localStorage.getItem("studentInfo"));
+    const form = document.getElementById("examForm");
+
+    const info = document.createElement("div");
+    info.innerHTML = `<h3>Welcome ${student.name}</h3>`;
+    form.appendChild(info);
+
+    for(let i=1; i<=100; i++) {
+      const div = document.createElement("div");
+      div.classList.add("question");
+      div.innerHTML = `
+        <label>Q${i}. Sample Question ${i}?</label><br>
+        <input type="radio" name="q${i}" value="A"> A<br>
+        <input type="radio" name="q${i}" value="B"> B<br>
+        <input type="radio" name="q${i}" value="C"> C<br>
+        <input type="radio" name="q${i}" value="D"> D<br>
+      `;
+      form.appendChild(div);
+    }
+
+    const submitBtn = document.createElement("button");
+    submitBtn.textContent = "Submit Exam";
+    submitBtn.type = "submit";
+    form.appendChild(submitBtn);
+
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      alert("Exam Submitted! Your result will be sent to Admin Email (simulated).");
+      console.log("Result sent to kvvsn232@gmail.com (Simulation)");
+    });
+  </script>
+</body>
+</html>

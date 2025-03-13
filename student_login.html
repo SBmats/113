@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Student Login</h2>
+    <form id="studentLoginForm">
+      <label>Student Name:</label>
+      <input type="text" id="name" required>
+      <label>Roll Number:</label>
+      <input type="text" id="roll" required>
+      <label>Branch:</label>
+      <input type="text" id="branch" required>
+      <label>College:</label>
+      <input type="text" id="college" required>
+      <label>Phone:</label>
+      <input type="tel" id="phone" required>
+      <button type="submit">Start Exam</button>
+    </form>
+  </div>
+  <script>
+    document.getElementById("studentLoginForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      const student = {
+        name: document.getElementById("name").value,
+        roll: document.getElementById("roll").value,
+        branch: document.getElementById("branch").value,
+        college: document.getElementById("college").value,
+        phone: document.getElementById("phone").value
+      };
+      localStorage.setItem("studentInfo", JSON.stringify(student));
+      window.location.href = "exam.html";
+    });
+  </script>
+</body>
+</html>
